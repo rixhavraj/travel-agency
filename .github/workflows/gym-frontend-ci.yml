@@ -1,0 +1,41 @@
+name: GymPro Frontend CI Build Verification
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'gym/frontend/**'
+  pull_request:
+    branches:
+      - main
+      - master
+    paths:
+      - 'gym/frontend/**'
+
+jobs:
+  build:
+    name: Verify TypeScript & Next.js Production Build
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: gym/frontend
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: gym/frontend/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Verify Next.js Compilation & Build
+        run: npm run build
