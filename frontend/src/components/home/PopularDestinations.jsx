@@ -26,7 +26,7 @@ export const DestinationCard = ({ dest, index }) => {
       >
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full transition-transform duration-700 ease-out group-hover:scale-105">
-          <img src={dest.local_img_path ? `http://localhost:5000${dest.local_img_path}` : dest.img} alt={dest.name} className="w-full h-full object-cover" />
+          <img src={dest.local_img_path ? `https://travel-agency-2kkx.onrender.com${dest.local_img_path}` : dest.img} alt={dest.name} className="w-full h-full object-cover" />
         </div>
       
       {/* Gradient Overlay */}

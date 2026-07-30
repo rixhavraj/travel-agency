@@ -37,7 +37,7 @@ const BlogSection = ({ data = [] }) => {
               {/* Image */}
               <div className="relative h-64 overflow-hidden group">
                 <img 
-                  src={post.local_img_path ? `http://localhost:5000${post.local_img_path}` : ''} 
+                  src={post.local_img_path ? `https://travel-agency-2kkx.onrender.com${post.local_img_path}` : ''} 
                   alt={post.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />

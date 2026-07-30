@@ -71,7 +71,7 @@ const WhyChooseUs = ({ data = [] }) => {
                     className="col-span-2 rounded-3xl overflow-hidden aspect-[2/1]"
                   >
                     <img 
-                      src={`http://localhost:5000${data[0].local_img_path}`} 
+                      src={`https://travel-agency-2kkx.onrender.com${data[0].local_img_path}`} 
                       alt="Taj Mahal" 
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                     />
@@ -86,7 +86,7 @@ const WhyChooseUs = ({ data = [] }) => {
                     className="col-span-1 rounded-3xl overflow-hidden aspect-[4/3]"
                   >
                     <img 
-                      src={`http://localhost:5000${data[1].local_img_path}`} 
+                      src={`https://travel-agency-2kkx.onrender.com${data[1].local_img_path}`} 
                       alt="Temple" 
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                     />
@@ -99,7 +99,7 @@ const WhyChooseUs = ({ data = [] }) => {
                     className="col-span-1 rounded-3xl overflow-hidden aspect-[4/3]"
                   >
                     <img 
-                      src={`http://localhost:5000${data[2].local_img_path}`} 
+                      src={`https://travel-agency-2kkx.onrender.com${data[2].local_img_path}`} 
                       alt="Hawa Mahal Top" 
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                     />
@@ -114,7 +114,7 @@ const WhyChooseUs = ({ data = [] }) => {
                     className="col-span-1 rounded-3xl overflow-hidden aspect-[4/3]"
                   >
                     <img 
-                      src={`http://localhost:5000${data[3].local_img_path}`} 
+                      src={`https://travel-agency-2kkx.onrender.com${data[3].local_img_path}`} 
                       alt="India Travel" 
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                     />
@@ -127,7 +127,7 @@ const WhyChooseUs = ({ data = [] }) => {
                     className="col-span-1 rounded-3xl overflow-hidden aspect-[4/3]"
                   >
                     <img 
-                      src={`http://localhost:5000${data[4].local_img_path}`} 
+                      src={`https://travel-agency-2kkx.onrender.com${data[4].local_img_path}`} 
                       alt="Hawa Mahal Bottom" 
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                     />
