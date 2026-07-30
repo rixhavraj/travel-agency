@@ -16,7 +16,7 @@ export const TourPackageCard = ({ pkg }) => {
       
       {/* Image */}
       <div className="relative h-60 overflow-hidden">
-        <img src={pkg.local_img_path ? `http://localhost:5000${pkg.local_img_path}` : ''} alt={pkg.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+        <img src={pkg.local_img_path ? `https://travel-agency-2kkx.onrender.com${pkg.local_img_path}` : ''} alt={pkg.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
         <div className="absolute top-4 right-4 bg-white/90 text-primary px-2 py-1 rounded text-xs font-bold flex items-center gap-1 shadow-lg backdrop-blur-sm z-10">
           <FaStar className="text-accent" /> {pkg.rating}
         </div>

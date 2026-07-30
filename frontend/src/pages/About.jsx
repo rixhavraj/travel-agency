@@ -64,16 +64,16 @@ const About = () => {
             className="lg:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4"
           >
             <div className="space-y-4">
-              <img src="http://localhost:5000/uploads/dest_Kedarnath.jpg" alt="Kedarnath Temple" className="rounded-3xl h-48 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
-              <img src="http://localhost:5000/uploads/dest_Rishikesh.jpg" alt="Rishikesh Ganga" className="rounded-3xl h-64 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
+              <img src="https://travel-agency-2kkx.onrender.com/uploads/dest_Kedarnath.jpg" alt="Kedarnath Temple" className="rounded-3xl h-48 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
+              <img src="https://travel-agency-2kkx.onrender.com/uploads/dest_Rishikesh.jpg" alt="Rishikesh Ganga" className="rounded-3xl h-64 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="space-y-4 mt-8">
-              <img src="http://localhost:5000/uploads/dest_Nainital.jpg" alt="Nainital Lake" className="rounded-3xl h-64 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
-              <img src="http://localhost:5000/uploads/dest_Auli.jpg" alt="Auli Snow" className="rounded-3xl h-48 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
+              <img src="https://travel-agency-2kkx.onrender.com/uploads/dest_Nainital.jpg" alt="Nainital Lake" className="rounded-3xl h-64 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
+              <img src="https://travel-agency-2kkx.onrender.com/uploads/dest_Auli.jpg" alt="Auli Snow" className="rounded-3xl h-48 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="space-y-4 mt-16 hidden md:block">
-              <img src="http://localhost:5000/uploads/dest_Badrinath.jpg" alt="Badrinath Temple" className="rounded-3xl h-48 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
-              <img src="http://localhost:5000/uploads/dest_Mussoorie.jpg" alt="Mussoorie Hills" className="rounded-3xl h-64 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
+              <img src="https://travel-agency-2kkx.onrender.com/uploads/dest_Badrinath.jpg" alt="Badrinath Temple" className="rounded-3xl h-48 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
+              <img src="https://travel-agency-2kkx.onrender.com/uploads/dest_Mussoorie.jpg" alt="Mussoorie Hills" className="rounded-3xl h-64 object-cover w-full shadow-lg hover:scale-105 transition-transform duration-500" />
             </div>
           </motion.div>
         </div>

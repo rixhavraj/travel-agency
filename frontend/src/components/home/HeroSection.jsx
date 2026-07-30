@@ -20,7 +20,7 @@ const HeroSection = ({ data = [] }) => {
   ];
 
   const heroImages = data && data.length > 0 
-    ? data.map(item => `http://localhost:5000${item.local_img_path}`)
+    ? data.map(item => `https://travel-agency-2kkx.onrender.com${item.local_img_path}`)
     : defaultImages;
 
   return (

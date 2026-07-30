@@ -18,7 +18,7 @@ export const fetchDestinationDetails = async (query) => {
 
 export const fetchUnsplashPhotos = async (query) => {
   try {
-    const response = await fetch(`http://localhost:5000/api/photos?query=${encodeURIComponent(query)}`);
+    const response = await fetch(`https://travel-agency-2kkx.onrender.com/api/photos?query=${encodeURIComponent(query)}`);
     if (!response.ok) {
       throw new Error('Failed to fetch photos from backend');
     }
@@ -32,7 +32,7 @@ export const fetchUnsplashPhotos = async (query) => {
 export const fetchHomeData = async () => {
   while (true) {
     try {
-      const response = await fetch('http://localhost:5000/api/home-data');
+      const response = await fetch('https://travel-agency-2kkx.onrender.com/api/home-data');
       if (response.ok) {
         return await response.json();
       }
@@ -44,4 +44,3 @@ export const fetchHomeData = async () => {
     await new Promise(resolve => setTimeout(resolve, 3000));
   }
 };
-

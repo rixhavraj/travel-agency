@@ -121,7 +121,7 @@ const PackageDetail = () => {
     );
   }
 
-  const imgSrc = dest.local_img_path ? `http://localhost:5000${dest.local_img_path}` : dest.img;
+  const imgSrc = dest.local_img_path ? `https://travel-agency-2kkx.onrender.com${dest.local_img_path}` : dest.img;
 
   // Itinerary Data with Image mappings
   const itinerary = [
