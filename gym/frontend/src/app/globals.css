@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-lime: #ccff00;
+  --color-neon-purple: #a855f7;
+  --color-dark-bg: #050508;
+  --color-dark-card: rgba(12, 12, 18, 0.6);
+  --color-silver-text: #e2e8f0;
+  --color-muted-text: #94a3b8;
+  
+  --font-sans: var(--font-geist-sans), Arial, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  --animate-grid-move: grid-move 20s linear infinite;
+  --animate-scanline: scanline 8s linear infinite;
+  --animate-cyber-pulse: cyber-pulse 2s infinite alternate;
+  --animate-border-run: border-run 4s linear infinite;
+  --animate-shimmer: shimmer 2.5s infinite;
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes grid-move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(40px); }
+  }
+  @keyframes scanline {
+    0% { top: -10%; }
+    100% { top: 110%; }
+  }
+  @keyframes cyber-pulse {
+    0% { box-shadow: 0 0 5px rgba(204, 255, 0, 0.2), inset 0 0 5px rgba(204, 255, 0, 0.1); }
+    100% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.5), inset 0 0 10px rgba(168, 85, 247, 0.2); }
+  }
+  @keyframes border-run {
+    0%, 100% { border-color: rgba(204, 255, 0, 0.4); }
+    50% { border-color: rgba(168, 85, 247, 0.4); }
+  }
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+/* Custom global overrides */
+:root {
+  --background: #050508;
+  --foreground: #e2e8f0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Restore normal system browser cursor globally */
+body, html {
+  cursor: default !important;
+}
+
+a, button, select, input, textarea, [role="button"], .cursor-none {
+  cursor: pointer !important;
+}
+
+input[type="text"], input[type="email"], textarea {
+  cursor: text !important;
+}
+
+/* Slim Premium Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050508;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(204, 255, 0, 0.2);
+  border-radius: 3px;
+  border: 1px solid rgba(204, 255, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(204, 255, 0, 0.5);
+  box-shadow: 0 0 10px rgba(204, 255, 0, 0.8);
+}
+
+/* Glassmorphism panel styles */
+.glass-panel {
+  background: rgba(10, 10, 16, 0.7);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-lime {
+  background: rgba(10, 10, 16, 0.7);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(204, 255, 0, 0.15);
+}
+
+.glass-panel-purple {
+  background: rgba(10, 10, 16, 0.7);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+}
+
+/* Cyber text effects */
+.cyber-glow-text {
+  text-shadow: 0 0 10px rgba(204, 255, 0, 0.3), 0 0 20px rgba(204, 255, 0, 0.2);
+}
+
+.cyber-glow-purple {
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.3), 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+/* Background animated elements */
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.cyber-grid-perspective {
+  perspective: 500px;
+}
+
+.cyber-grid-floor {
+  background-image: 
+    linear-gradient(rgba(204, 255, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(204, 255, 0, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  transform: rotateX(60deg);
+  transform-origin: top;
+}
+
+/* Neon glow wrappers */
+.glow-lime {
+  box-shadow: 0 0 20px rgba(204, 255, 0, 0.15);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+/* Custom range inputs */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ccff00;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ccff00;
+}
+
+

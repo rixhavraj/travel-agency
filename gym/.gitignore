@@ -1,0 +1,23 @@
+# Gym project root gitignore
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environments
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
